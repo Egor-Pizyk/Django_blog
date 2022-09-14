@@ -32,5 +32,6 @@ class Rating(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     value = models.IntegerField()
 
+
     def __str__(self):
         return str(self.value)
